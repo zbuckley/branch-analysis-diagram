@@ -1,0 +1,7 @@
+language: python
+version: 
+ - 3.8
+
+script: tox
+
+notifications:
