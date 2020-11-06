@@ -3,4 +3,5 @@ version:
   - "3.8"
 
 script: 
-  - "python -m pytest"
+  - pip install .
+  - pytest
