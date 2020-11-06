@@ -27,11 +27,13 @@ setup(
     ],
     keywords='development, git',
     packages=find_packages(where='./'),
-    python_requires='>=3, <4',
-    install_requires=[],
+    python_requires='>=3.5, <4',
+    install_requires=[
+        'GitPython',
+    ],
     entry_points={
         'console_scripts': [
-            'dag=dag:main'
+            'bad=Bad.bad:main',
         ]
     },
     # TODO project urls
