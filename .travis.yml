@@ -1,5 +1,5 @@
 language: python
-version: 
+version:
   - "3.8"
 
 script: 
