@@ -6,10 +6,11 @@ import pathlib
 here = pathlib.Path(__file__).parent.resolve()
 
 long_description = (here / 'README.md').read_text(encoding="utf-8")
+version = (here / 'VERSION').read_text(encoding='utf-8').strip()
 
 setup(
     name='bad',
-    version="0.0.1",
+    version=version,
     description="Branch Analysis Diagram (BAD) generated a dendrogram of git branches",
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -30,6 +31,8 @@ setup(
     python_requires='>=3.5, <4',
     install_requires=[
         'GitPython',
+        'numpy',
+        'pillow'
     ],
     entry_points={
         'console_scripts': [
